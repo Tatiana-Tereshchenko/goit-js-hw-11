@@ -8,7 +8,21 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+<div class="container">
+  <div class="search">
+  <form class="search-form" id="search-form">
+    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." class="input-search" />
+    
+    <button type="submit" class="send">
+      <svg class="icon" width="20" height="20">
+        <use href='./images/sprite.svg#icon-noun-search-1491345'></use>
+      </svg>
+    </button>
+  </form>
+  </div>
+<div class="gallery">
+  <!-- Картки зображень -->
+</div>
+</div>
   </body>
 </html>

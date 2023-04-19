@@ -1,2 +1,70 @@
 @import './common';
 @import './example';
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+   
+}
+@media screen and (min-width: 480px) {
+    .container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1160px;
+    }
+}
+
+.search-form {
+    position: relative;
+    padding-top: 18px;
+    
+}
+.send {
+position: absolute;
+height: 40px;
+right: 1px;
+background-color: rgba(78, 82, 78, 0.5);
+
+border: black;
+}
+// .send::after {
+//     content: ' ';
+//     position: absolute;
+//     width: 20px;
+//     height: 20px;
+//     background-size: 20px 20px;
+//     border-radius: 100%;
+//     top: 0%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+.search {
+    height: 70px;
+display: flex;
+justify-content: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+background: linear-gradient(to top,
+            rgba(5, 139, 101, 0.7),
+            rgba(234, 248, 220, 0.7));
+}
+.input-search {
+    height: 40px;
+    border: 3px solid rgba(45, 46, 45, 0.5);
+    width: 350px;
+}
